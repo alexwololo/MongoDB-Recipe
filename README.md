@@ -1,5 +1,12 @@
 # Backendprogrammering och databaser - Labb 2
 
+## Outcome
+Final grade: VG
+Time to completion: 2h
+
+### Notes about project:
+Biggest challenge was to creat favourites with minimal amount of code. Populating the database was timeconsuming, I used http://www.pannkakor.se/ to get the data.
+
 ## Mål och syfte
 
 I Labb 2 använder vi MongoDB som är en NoSQL-databas. Vi strukterar upp databasen enligt
