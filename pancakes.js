@@ -206,13 +206,20 @@ db.pancakes.deleteOne({ order: 7 });
 // display something specific, im showing all titles
 db.pancakes.findOne({}, { _id: 0, title: 1 });
 db.pancakes.find({}, { _id: 0, title: 1 });
+//Sort by "rating" in Ascending Order
+db.pancakes
+  .find()
+  .sort({ rating: 1 })
+  .forEach((d) => {
+    printjson({ name: d.title, rating: d.rating });
+  });
 
 // make all pancakes as a favourite if their order number is 6 or less
-pancakes >
-  db.pancakes.updateMany({ order: { $lte: 6 } }, { $set: { isFav: true } });
+db.pancakes.updateMany({ order: { $lte: 6 } }, { $set: { isFav: true } });
 
 // count all favourites that marked as favourites
 db.pancakes.find({ isFav: true }).count();
+db.pancakes.countDocuments({ isFav: true });
 
 // list all documets that are marked as favourite
 db.pancakes.find({ isFav: true });
