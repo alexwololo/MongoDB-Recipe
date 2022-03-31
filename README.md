@@ -3,6 +3,7 @@
 ## Outcome
 
 • Final grade: VG
+
 • Time to completion: 2h
 
 ### Notes about project:
